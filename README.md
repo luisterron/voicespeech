@@ -1,29 +1,24 @@
-# Streamlit UI for OpenAI's Whisper transcription & analytics
+# Interfaz de Usuario Streamlit para la Transcripción y Análisis con Whisper de OpenAI
 
-https://user-images.githubusercontent.com/6735526/196173369-27c5ceec-733a-4928-8acb-17cbc2e77a04.mp4
+[![Video Demostración](https://user-images.githubusercontent.com/6735526/196173369-27c5ceec-733a-4928-8acb-17cbc2e77a04.mp4)](https://user-images.githubusercontent.com/6735526/196173369-27c5ceec-733a-4928-8acb-17cbc2e77a04.mp4)
 
-This is a simple [Streamlit UI](https://streamlit.io/) for [OpenAI's Whisper speech-to-text model](https://openai.com/blog/whisper/).
-It let's you automatically select media by YouTube URL or select local files & then runs Whisper on them.
-Following that, it will display some basic analytics on the transcription.
-Feel free to send a PR if you want to add any more analytics or features!
+Esta es una sencilla **Interfaz de Usuario Streamlit** para el modelo de **conversión de voz a texto Whisper** de OpenAI, adaptada a la experiencia y visión de **Luis Fernández**, experto en desarrollo digital y creación de soluciones innovadoras.
 
-## Setup
-This was built & tested on Python 3.9 but should also work on Python 3.7+ as with the original [Whisper repo](https://github.com/openai/whisper)).
-You'll need to install `ffmpeg` on your system. Then, install the requirements with `pip`.
+El proyecto te permite seleccionar automáticamente archivos multimedia a través de una URL de YouTube o mediante archivos locales para ejecutar el modelo Whisper. Una vez realizada la transcripción, se muestran análisis básicos del texto generado, lo que facilita la evaluación y optimización de contenidos.
 
-```
+Si deseas aportar mejoras, nuevas funcionalidades o análisis adicionales, ¡no dudes en enviar un *Pull Request*! Luis siempre está abierto a colaboraciones que impulsen la innovación.
+
+## Configuración
+
+Este proyecto fue desarrollado y probado en **Python 3.9**, aunque debería funcionar también en Python 3.7 o superior, de manera similar al repositorio original de [Whisper de OpenAI](https://github.com/openai/whisper).
+
+Es necesario contar con `ffmpeg` instalado en tu sistema para el correcto funcionamiento. Luego, instala las dependencias requeridas usando `pip`:
+
+```bash
 pip install -r requirements.txt
 ```
-## Usage
-
-Once you're set up, you can run the app with:
-
-```
+Uso
+Una vez configurado, puedes iniciar la aplicación con el siguiente comando:
+```bash
 streamlit run 01_Transcribe.py
 ```
-
-This will open a new tab in your browser with the app. You can then select a YouTube URL or local file & click "Run Whisper" to run the model on the selected media.
-
-## License
-Whisper is licensed under [MIT](https://github.com/openai/whisper/blob/main/LICENSE) while Streamlit is licensed under [Apache 2.0](https://github.com/streamlit/streamlit/blob/develop/LICENSE).
-Everything else is licensed under [MIT](https://github.com/hayabhay/whisper-ui/blob/main/LICENSE).
